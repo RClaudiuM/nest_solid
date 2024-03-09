@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { NotificationType, notificationGateways } from './notification.gateway';
 
-//  Open/Closed principle - Open for extension but closed for modifications
-//? Design the code to be open for extension but closed for modification. This means that the when you need to add new features or modify existing behaviour you should do so by extending or creating new classes rather then modifying existing ones.
+//! Open/Closed principle - Open for extension but closed for modifications
+//? Design the code to be open for extension but closed for modification.
+//? This means that the when you need to add new features or modify existing behaviour you should do so by extending or creating new classes rather than modifying existing ones.
 
 // The NotificationService class needs to be open for extension, as new notification types will need to be added without modifying the existing code.
 
