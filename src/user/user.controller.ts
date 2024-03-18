@@ -21,6 +21,6 @@ export class UserController {
     //✅ Good practice because we can share the logic to send emails with other parts of the application.
     this.emailsService.sendWelcomeEmail(createUserDto.email);
 
-    return this.userService.createUser(createUserDto);
+    return createdUser;
   }
 }
