@@ -3,6 +3,12 @@ import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { EmailsService } from '../emails/emails.service';
 @Controller('user')
+
+/**
+ * The `UserController` is responsible for handling HTTP requests related to user operations. Its primary responsibility is to orchestrate the flow of data between the client and the server, and to
+ * !  delegate the business logic to the appropriate services.
+ * !  The logic to create a user and send a welcome email can be considered separate concerns, even though they are related.
+ */
 export class UserController {
   constructor(
     private readonly userService: UserService,
