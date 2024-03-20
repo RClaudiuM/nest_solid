@@ -54,4 +54,5 @@ export const notificationGateways: Record<
   [NotificationType.EMAIL]: new EmailNotification(),
   [NotificationType.SMS]: new SMSNotification(),
   [NotificationType.PUSH]: new PushNotification(),
+  // [NotificationType.WHATSAPP]: new WhatsappNotification(),
 };
